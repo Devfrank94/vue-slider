@@ -10,6 +10,7 @@ data(){
       'img/04.webp',
       'img/05.webp',
       ],
+
       counter:0
 
 
@@ -18,7 +19,10 @@ data(){
 
   methods:{
     nextPrev(isNext){
-      if(isNext) this.counter++
+      isNext ? this.counter++ : this.counter--;
+      if(this.counter === this.counter.length) this.counter = 0;
+      if(this.counter < 0) this.counter = this.counter.length - 1;
+      console.log(this.counter)
     }
 
   },
