@@ -10,7 +10,7 @@
 
     <!-- stile -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Carosello Mono Array</title>
+    <title>Vue Slider</title>
 </head>
 <body>
     
@@ -19,10 +19,10 @@
       <div class="main-wrapper">
         <div class="container">
           <div class="slider">
-            <div class="btn-arrow top">&#9650;</div>
-            <div class="btn-arrow down">&#9660;</div>
+            <div @click="nextPrev(false)" class="btn-arrow top">&#9650;</div>
+            <div @click="nextPrev(true)" class="btn-arrow down">&#9660;</div>
             <div class="items-wrapper">
-            
+            <img :src="images[0]">
             </div>
           </div>
         </div>
