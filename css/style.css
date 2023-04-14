@@ -13,12 +13,12 @@ body{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container{
   width: 70%;
   height: 70%;
+  margin-top: 50px;
 }
 
 .slider{
@@ -38,7 +38,7 @@ body{
   height: 100%;
 }
 
-.slider img{
+.items-wrapper img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -71,4 +71,21 @@ body{
 
 .hide{
   display: none;
+}
+
+.active{
+  border: 4px solid rgb(7, 137, 197);
+}
+
+.slider .thumbnails{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.thumbnails img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
